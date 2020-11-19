@@ -15,6 +15,7 @@ body {
   width: 100%;
   font-family: hkgrotesk;
   background-color: black;
+  overflow: hidden;
 }
 
 
@@ -31,6 +32,19 @@ h1 {
   left: 50%;
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
+}
+
+@media screen and (max-width: 992px) {
+  html, body {
+    font-size: 2rem;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 0.5rem;
+  }
 }
 
 @keyframes letterspacing {
